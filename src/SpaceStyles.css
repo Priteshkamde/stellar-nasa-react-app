@@ -1,0 +1,11 @@
+.space-background{
+    background-image: url(./images/planest.jpg);
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+.img_resize{
+    height: 2rem;
+    width: 2rem;
+}
