@@ -30,7 +30,8 @@ export default function NasaPhoto() {
     
     return(
         <>
-        <Jumbotron className="bg-light" fluid>
+        <NavBar />
+        <Jumbotron className="bg-dark" fluid>
             <Container>            
                 {photoData.media_type === "image" ? (
                     <Image src={photoData.url} alt={photoData.title} fluid rounded />
@@ -55,7 +56,6 @@ export default function NasaPhoto() {
                     <p className="mt-3 text-justify lead">{photoData.explanation}</p>
                 </div>
             </Container>
-        <NavBar />
 
     </>
     );
