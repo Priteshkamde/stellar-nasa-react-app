@@ -33,19 +33,24 @@ export default function NasaPhoto() {
         <NavBar />
         <Jumbotron className="bg-dark" fluid>
             <Container>            
-                {photoData.media_type === "image" ? (
-                    <Image src={photoData.url} alt={photoData.title} fluid rounded />
-                ) : (
-                    <iframe  
-                    title="space-video"
-                    src={photoData.url}
-                    frameBorder="0"
-                    gesture="media"
-                    allow="encrypted-media"
-                    allowFullScreen
-                    className="photo"
-                    />
-                )}
+                {
+                    photoData.media_type === "image" ? 
+                    (
+                        <Image src={photoData.url} alt={photoData.title} fluid rounded />
+                    ) 
+                    : 
+                    (
+                        <iframe  
+                        title="space-video"
+                        src={photoData.url}
+                        frameBorder="0"
+                        gesture="media"
+                        allow="encrypted-media"
+                        allowFullScreen
+                        className="photo"
+                        />
+                    )
+                }
             </Container>
         </Jumbotron>
 

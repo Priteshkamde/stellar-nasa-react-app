@@ -21,11 +21,13 @@ export default function Home() {
                     <img 
                     className="img_resize mr-2"            
                     src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png?v8"
+                    alt="space-rocket"
                     />
                     Interstellar
                     <img 
                     className="img_resize ml-2"            
                     src="https://github.githubassets.com/images/icons/emoji/unicode/1f30c.png?v8"
+                    alt="space-way"
                     />
                     </p>
                 </Button>
